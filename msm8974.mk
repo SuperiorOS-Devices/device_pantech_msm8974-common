@@ -243,6 +243,11 @@ PRODUCT_PACKAGES += \
     libxml2 \
     librmnetctl
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
