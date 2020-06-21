@@ -2,4 +2,8 @@ allow priv_app proc_interrupts:file open;
 allow priv_app proc_modules:file { getattr open };
 allow priv_app sysfs:file { open read };
 allow priv_app sysfs_android_usb:file open;
-
+allow priv_app alarm_boot_prop:file { getattr open };
+allow priv_app alarm_handled_prop:file { getattr open };
+allow priv_app alarm_instance_prop:file open;
+allow priv_app device:dir open;
+allow priv_app unlabeled:filesystem getattr;
