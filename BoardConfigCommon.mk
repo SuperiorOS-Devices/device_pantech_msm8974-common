@@ -97,6 +97,12 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 # Offmode Charging
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(COMMON_PATH)/charger/images
 
+# Lineage Hardware
+BOARD_HARDWARE_CLASS += $(COMMON_PATH)/lineagehw
+
+# Legacy memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
 ifneq ($(TARGET_BUILD_VARIANT),eng)
